@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "searoute-mcp"
+version = "0.1.0"
+description = "An MCP server that computes maritime routes and geodesic distances using searoute and geopy."
+authors = [{ name = "Jordan Taylor", email = "projectharrison5@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp>=1.15.0",
+  "searoute>=1.4.3",
+  "geopy>=2.4.1"
+]
+
+[project.scripts]
+searoute-mcp = "mcp_server.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mcp_server*"]

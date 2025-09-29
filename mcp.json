@@ -1,0 +1,22 @@
+{
+  "name": "Searoute MCP",
+  "description": "An MCP server that computes oceangoing routes and geodesic distances using searoute and geopy.",
+  "entry": "mcp_server/main.py",
+  "language": "python",
+  "tools": [
+    {
+      "name": "compute_distance",
+      "description": "Compute shortest oceangoing route distance (nm) between two coordinates."
+    },
+    {
+      "name": "compute_route",
+      "description": "Compute oceangoing route geometry and distance (nm) between two coordinates."
+    },
+    {
+      "name": "compute_geodesic",
+      "description": "Compute ellipsoidal geodesic distance (nm) between two coordinates."
+    }
+  ],
+  "resources": [],
+  "prompts": []
+}
