@@ -16,6 +16,13 @@ dependencies = [
   "geopy>=2.4.1"
 ]
 
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-asyncio",
+  "ruff",
+]
+
 [project.scripts]
 searoute-mcp = "mcp_server.main:main"
 
