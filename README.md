@@ -5,9 +5,11 @@
 
 <strong>Maritime Routing MCP Server (Python)</strong>
 
+[![Build Status](https://github.com/Project-Harrison/searoute_mcp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Project-Harrison/searoute_mcp/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-brightgreen)
 ![Status](https://img.shields.io/badge/status-experimental-orange)
+
 
 </div>
 

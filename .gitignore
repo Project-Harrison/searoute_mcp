@@ -23,3 +23,4 @@ source/   # accidental venv path that got committed
 
 # Project-specific
 searoute_mcp.egg-info/
+.DS_Store
