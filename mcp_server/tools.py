@@ -6,12 +6,12 @@ from geopy.distance import geodesic
 mcp = FastMCP("route-server")
 
 @mcp.tool(description="Compute shortest oceangoing route distance in nautical miles.")
-def compute_distance(start_lon: float, start_lat: float, end_lon: float, end_lat: float) -> float:
+def compute_distance(start_lat: float, start_lon: float, end_lat: float, end_lon: float) -> float:
     route = sr.searoute([start_lon, start_lat], [end_lon, end_lat], units="nm")
     return route["properties"]["length"]
 
 @mcp.tool(description="Compute shortest oceangoing route with distance and waypoints between two coordinates.")
-def compute_route(start_lon: float, start_lat: float, end_lon: float, end_lat: float) -> dict:
+def compute_route(start_lat: float, start_lon: float, end_lat: float, end_lon: float) -> dict:
     route = sr.searoute([start_lon, start_lat], [end_lon, end_lat], units="nm")
     return {
         "distance_nm": route["properties"]["length"],
@@ -19,6 +19,6 @@ def compute_route(start_lon: float, start_lat: float, end_lon: float, end_lat: f
     }
 
 @mcp.tool(description="Compute geodesic great-circle distance in nautical miles (ignores route, this is shortest distance on a sphere).")
-def compute_geodesic(start_lon: float, start_lat: float, end_lon: float, end_lat: float) -> float:
+def compute_geodesic(start_lat: float, start_lon: float, end_lat: float, end_lon: float) -> float:
     km = geodesic((start_lat, start_lon), (end_lat, end_lon)).km
     return km * 0.539957
