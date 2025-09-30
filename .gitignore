@@ -1,25 +1,25 @@
-# Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Packaging
 *.egg-info/
 *.egg
+build/
+dist/
 
 # Virtual environments
 .venv/
 venv/
 ENV/
 env/
-source/
+source/   # accidental venv path that got committed
 
-# Build / dist
-build/
-dist/
-
-# IDEs
+# IDE / editor
 .vscode/
 .idea/
 
-
-searoute_mcp.egg-info
+# Project-specific
+searoute_mcp.egg-info/
