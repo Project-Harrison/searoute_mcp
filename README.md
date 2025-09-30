@@ -26,6 +26,7 @@
 - [References](#references)
 
 ---
+![Searoute MCP Demo](docs/static/searoute_demo.png)
 
 ## Overview
 
