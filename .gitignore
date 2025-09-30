@@ -3,16 +3,22 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.so
-
-# Virtual environment
-.venv/
-
-# Build outputs
 *.egg-info/
-dist/
-build/
+*.egg
 
-# IDE
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+source/
+
+# Build / dist
+build/
+dist/
+
+# IDEs
 .vscode/
 .idea/
+
+searoute_mcp.egg-info
