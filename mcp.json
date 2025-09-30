@@ -1,7 +1,10 @@
 {
-  "name": "Searoute MCP",
+  "name": "searoute-mcp",
   "description": "An MCP server that computes oceangoing routes and geodesic distances using searoute and geopy.",
-  "entry": "mcp_server/main.py",
+  "entry": {
+    "command": "python",
+    "args": ["-m", "mcp_server.main"]
+  },
   "language": "python",
   "tools": [
     {
