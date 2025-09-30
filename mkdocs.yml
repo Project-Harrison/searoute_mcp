@@ -1,0 +1,38 @@
+site_name: searoute_mcp
+site_description: Maritime routing MCP server
+site_url: https://Project-Harrison/searoute_mcp
+
+repo_name: ShippingIntel/searoute_mcp
+repo_url: https://github.com/Project-Harrison/searoute_mcp
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - API Reference: api.md
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+    - scheme: slate
+      primary: blue
+      accent: blue
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [mcp_server]
